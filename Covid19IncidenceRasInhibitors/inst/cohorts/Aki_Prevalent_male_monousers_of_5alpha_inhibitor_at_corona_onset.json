@@ -15,11 +15,11 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 1332418,
+            "CONCEPT_ID": 930021,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "17767",
+            "CONCEPT_CODE": "17300",
             "VOCABULARY_ID": "RxNorm",
-            "CONCEPT_NAME": "Amlodipine",
+            "CONCEPT_NAME": "alfuzosin",
             "DOMAIN_ID": "Drug",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Ingredient",
@@ -32,11 +32,11 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 1353776,
+            "CONCEPT_ID": 1363053,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "4316",
+            "CONCEPT_CODE": "49276",
             "VOCABULARY_ID": "RxNorm",
-            "CONCEPT_NAME": "Felodipine",
+            "CONCEPT_NAME": "doxazosin",
             "DOMAIN_ID": "Drug",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Ingredient",
@@ -49,11 +49,11 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 1326012,
+            "CONCEPT_ID": 1350489,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "33910",
+            "CONCEPT_CODE": "8629",
             "VOCABULARY_ID": "RxNorm",
-            "CONCEPT_NAME": "Isradipine",
+            "CONCEPT_NAME": "prazosin",
             "DOMAIN_ID": "Drug",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Ingredient",
@@ -66,11 +66,11 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 1318137,
+            "CONCEPT_ID": 19012925,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "7396",
+            "CONCEPT_CODE": "720825",
             "VOCABULARY_ID": "RxNorm",
-            "CONCEPT_NAME": "Nicardipine",
+            "CONCEPT_NAME": "silodosin",
             "DOMAIN_ID": "Drug",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Ingredient",
@@ -83,11 +83,11 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 1318853,
+            "CONCEPT_ID": 924566,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "7417",
+            "CONCEPT_CODE": "77492",
             "VOCABULARY_ID": "RxNorm",
-            "CONCEPT_NAME": "Nifedipine",
+            "CONCEPT_NAME": "tamsulosin",
             "DOMAIN_ID": "Drug",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Ingredient",
@@ -100,11 +100,11 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 1319880,
+            "CONCEPT_ID": 1341238,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "7435",
+            "CONCEPT_CODE": "37798",
             "VOCABULARY_ID": "RxNorm",
-            "CONCEPT_NAME": "Nisoldipine",
+            "CONCEPT_NAME": "terazosin",
             "DOMAIN_ID": "Drug",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Ingredient",
@@ -114,19 +114,59 @@
           "includeDescendants": true
         }
       ]},
-      "name": "[LEGEND] Dihydropyridine calcium channel blockers (dCCB)",
-      "id": 8
+      "name": "[Aki] alpha-blockers",
+      "id": 19
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 989482,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "228790",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "dutasteride",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 996416,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "25025",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "finasteride",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[Aki] 5-alpha reductase inhibitors",
+      "id": 20
     },
     {
       "expression": {"items": [{
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 316866,
+          "CONCEPT_ID": 198803,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "38341003",
+          "CONCEPT_CODE": "266569009",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Hypertensive disorder",
+          "CONCEPT_NAME": "Benign prostatic hyperplasia",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -135,12 +175,33 @@
         "includeMapped": false,
         "includeDescendants": true
       }]},
-      "name": "[LEGEND]Hypertension",
-      "id": 10
+      "name": "[Aki] BPH",
+      "id": 21
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1336926,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "358263",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "tadalafil",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "[Aki] tadalafil",
+      "id": 22
     }
   ],
   "EndStrategy": {"CustomEra": {
-    "DrugCodesetId": 8,
+    "DrugCodesetId": 20,
     "GapDays": 30,
     "Offset": 0
   }},
@@ -246,7 +307,7 @@
             "OccurrenceEndDate": null,
             "CorrelatedCriteria": null,
             "ConditionTypeExclude": false,
-            "CodesetId": 10,
+            "CodesetId": 21,
             "ProviderSpecialty": null,
             "Gender": null,
             "VisitType": null,
@@ -268,7 +329,136 @@
         "Groups": [],
         "Count": null
       },
-      "name": "Hypertension diagnosis anytime before (and including) start-date",
+      "name": "BPH diagnosis anytime before (and including) start-date",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": {
+                "Days": 180,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": -1
+              },
+              "UseIndexEnd": false
+            },
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"DrugExposure": {
+              "OccurrenceEndDate": null,
+              "CorrelatedCriteria": null,
+              "DrugSourceConcept": null,
+              "CodesetId": 19,
+              "DrugTypeExclude": false,
+              "Quantity": null,
+              "DrugType": null,
+              "ProviderSpecialty": null,
+              "EffectiveDrugDose": null,
+              "Gender": null,
+              "DaysSupply": null,
+              "DoseUnit": null,
+              "VisitType": null,
+              "Refills": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RouteConcept": null,
+              "StopReason": null,
+              "LotNumber": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 1,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          },
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": {
+                "Days": 180,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": -1
+              },
+              "UseIndexEnd": false
+            },
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"DrugExposure": {
+              "OccurrenceEndDate": null,
+              "CorrelatedCriteria": null,
+              "DrugSourceConcept": null,
+              "CodesetId": 22,
+              "DrugTypeExclude": false,
+              "Quantity": null,
+              "DrugType": null,
+              "ProviderSpecialty": null,
+              "EffectiveDrugDose": null,
+              "Gender": null,
+              "DaysSupply": null,
+              "DoseUnit": null,
+              "VisitType": null,
+              "Refills": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RouteConcept": null,
+              "StopReason": null,
+              "LotNumber": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 1,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          }
+        ],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No exposure to alpha-1 blocker or tadalafil",
+      "description": "This inclusion criteria varies depending on which T/C drug is being assessed (since that one will not be excluded)"
+    },
+    {
+      "expression": {
+        "CriteriaList": [],
+        "Type": "ALL",
+        "DemographicCriteriaList": [{
+          "Ethnicity": null,
+          "OccurrenceEndDate": null,
+          "Race": null,
+          "Gender": [{
+            "INVALID_REASON_CAPTION": "Unknown",
+            "CONCEPT_ID": 8507,
+            "STANDARD_CONCEPT": null,
+            "CONCEPT_CODE": "M",
+            "VOCABULARY_ID": "Gender",
+            "CONCEPT_NAME": "MALE",
+            "DOMAIN_ID": "Gender",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": null,
+            "INVALID_REASON": null
+          }],
+          "OccurrenceStartDate": null,
+          "Age": null
+        }],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "Male",
       "description": null
     }
   ],
@@ -277,7 +467,7 @@
       "OccurrenceEndDate": null,
       "CorrelatedCriteria": null,
       "DrugSourceConcept": null,
-      "CodesetId": 8,
+      "CodesetId": 20,
       "DrugTypeExclude": false,
       "Quantity": null,
       "DrugType": null,
