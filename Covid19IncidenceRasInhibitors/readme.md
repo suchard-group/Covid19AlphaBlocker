@@ -1,4 +1,4 @@
-Covid19IncidenceRasInhibitors
+Covid19IncidenceAlphaBlockers
 ==============================
 
 
@@ -38,7 +38,7 @@ How to run
 	
 	Alternatively, ensure that you have installed only the 64-bit versions of R and Java, as described in [the Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/OhdsiAnalyticsTools.html#installR)
 	
-2. In `R`, use the following `devtools` command to install the Covid19IncidenceRasInhibitors package:
+2. In `R`, use the following `devtools` command to install the Covid19IncidenceAlphaBlockers package:
 
 	```r
 	install() # Note: it is ok to delete inst/doc
@@ -47,7 +47,7 @@ How to run
 3. Once installed, you can execute the study by modifying and using the code below. For your convenience, this code is also provided under `extras/CodeToRun.R`:
 
 	```r
-	library(Covid19IncidenceRasInhibitors)
+	library(Covid19IncidenceAlphaBlockers)
 	
 	# Optional: specify where the temporary files (used by the ff package) will be created:
 	options(fftempdir = "c:/FFtemp")
@@ -59,7 +59,7 @@ How to run
 	minCellCount <- 5
 	
 	# The folder where the study intermediate and result files will be written:
-	outputFolder <- "c:/Covid19IncidenceRasInhibitors"
+	outputFolder <- "c:/Covid19IncidenceAlphaBlockers"
 	
 	# Details for connecting to the server:
 	# See ?DatabaseConnector::createConnectionDetails for help
@@ -120,11 +120,11 @@ How to run
 
 License
 =======
-The Covid19IncidenceRasInhibitors package is licensed under Apache License 2.0
+The Covid19IncidenceAlphaBlockers package is licensed under Apache License 2.0
 
 Development
 ===========
-Covid19IncidenceRasInhibitors was developed in ATLAS and R Studio.
+Covid19IncidenceAlphaBlockers was developed in ATLAS and R Studio.
 
 ### Development status
 

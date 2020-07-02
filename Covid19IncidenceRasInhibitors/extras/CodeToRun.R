@@ -1,4 +1,4 @@
-library(Covid19IncidenceRasInhibitors)
+library(Covid19IncidenceAlphaBlockers)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
 options(fftempdir = "s:/FFtemp")
@@ -7,7 +7,7 @@ options(fftempdir = "s:/FFtemp")
 maxCores <- parallel::detectCores()
 
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "s:/Covid19IncidenceRasInhibitors"
+outputFolder <- "s:/Covid19IncidenceAlphaBlockers"
 
 # Details for connecting to the server:
 connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "pdw",

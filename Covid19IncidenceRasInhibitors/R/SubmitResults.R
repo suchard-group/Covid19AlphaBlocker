@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of Covid19IncidenceRasInhibitors
+# This file is part of Covid19IncidenceAlphaBlockers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ uploadResults <- function(outputFolder, privateKeyFileName, userName) {
   }
   OhdsiSharing::sftpUploadFile(privateKeyFileName = privateKeyFileName, 
                                userName = userName,
-                               remoteFolder = "Covid19IncidenceRasInhibitors",
+                               remoteFolder = "Covid19IncidenceAlphaBlockers",
                                fileName = fileName)
   ParallelLogger::logInfo("Finished uploading")
 }
