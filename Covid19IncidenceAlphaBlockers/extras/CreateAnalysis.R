@@ -1,5 +1,6 @@
 # Create analysis plans
 
+# Manually select essential covariates.
 makeCovariateIdsToInclude <- function(includeIndexYear = FALSE) {
   ageGroupIds <- unique(
     floor(c(18:110) / 5) * 1000 + 3
@@ -123,7 +124,7 @@ cmAnalysis1 <- CohortMethod::createCmAnalysis(analysisId = 1,
                                               fitOutcomeModel = TRUE,
                                               fitOutcomeModelArgs = fitUnadjustedOutcomeModelArgs)
 
-# Analysis 2 -- adjusted outcome
+# Analysis 2 -- adjusted outcome: direct covariate adjustment without propoensity score
 
 cmAnalysis2 <- CohortMethod::createCmAnalysis(analysisId = 2,
                                               description = "Adjusted outcome",
@@ -134,6 +135,7 @@ cmAnalysis2 <- CohortMethod::createCmAnalysis(analysisId = 2,
                                               fitOutcomeModelArgs = fitAdjustedOutcomeModelArgs)
 
 # Analysis 3 -- minimal PS stratification
+# 'minimal PS': use a small number of manually selected covariates for the propensity score model
 
 cmAnalysis3 <- CohortMethod::createCmAnalysis(analysisId = 3,
                                               description = "Min PS stratified",
