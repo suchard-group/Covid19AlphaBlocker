@@ -1,9 +1,9 @@
 Package: Covid19IncidenceAlphaBlockers
 Type: Package
 Title: A Package Skeleton for Comparative Effectiveness Studies
-Version: 2.1.0
-Author: Marc A. Suchard [aut, cre]
-Maintainer: Marc A. Suchard <msuchard@ucla.edu>
+Version: 2.0.0
+Author: Marc A. Suchard [aut, cre], Akihiko (Aki) Nishimura [aut, cre]
+Maintainer: Akihiko (Aki) Nishimura <akihiko4@g.ucla.edu>
 Description: A skeleton package, to be used as a starting point when implementing comparative effect studies.
 Depends:
     R(>= 3.5.0),
