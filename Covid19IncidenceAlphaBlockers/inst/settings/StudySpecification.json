@@ -63019,7 +63019,7 @@
   "conceptSetCrossReference": [
     {
       "targetName": "negativeControlOutcomes",
-      "conceptSetId": 700,
+      "conceptSetId": 776,
       "propertyName": "outcomeId",
       "targetIndex": 0
     },
@@ -66980,23 +66980,6 @@
     {
       "expression": {"items": [
         {
-          "isExcluded": true,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 434165,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "309081009",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Abnormal cervical smear",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": false
-        },
-        {
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
@@ -67022,23 +67005,6 @@
             "CONCEPT_CODE": "78794000",
             "VOCABULARY_ID": "SNOMED",
             "CONCEPT_NAME": "Abrasion and/or friction burn of trunk without infection",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": false
-        },
-        {
-          "isExcluded": true,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4088290,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "248802009",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Absence of breast",
             "DOMAIN_ID": "Condition",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -67796,23 +67762,6 @@
           "includeDescendants": false
         },
         {
-          "isExcluded": true,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4050747,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "23406007",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Fracture of upper limb",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": false
-        },
-        {
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
@@ -68493,23 +68442,6 @@
           "includeDescendants": false
         },
         {
-          "isExcluded": true,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 75354,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "77881008",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Osteochondropathy",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": false
-        },
-        {
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
@@ -69037,23 +68969,6 @@
           "includeDescendants": false
         },
         {
-          "isExcluded": true,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4115367,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "202482009",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Wrist joint pain",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": false
-        },
-        {
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
@@ -69071,8 +68986,8 @@
           "includeDescendants": false
         }
       ]},
-      "name": "[Aki] Negative controls for Covid susceptibility among BPH patients - dpa",
-      "id": 700
+      "name": "[Aki] Negative controls for Covid susceptibility among BPH patients - explicit exclusion",
+      "id": 776
     },
     {
       "expression": {"items": [
@@ -69240,13 +69155,6 @@
   "negativeControls": [
     {
       "targetId": 1103,
-      "outcomeName": "Abnormal cervical smear",
-      "comparatorId": 1104,
-      "outcomeId": 434165,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1103,
       "outcomeName": "Abnormal pupil",
       "comparatorId": 1104,
       "outcomeId": 436409,
@@ -69257,13 +69165,6 @@
       "outcomeName": "Abrasion and/or friction burn of trunk without infection",
       "comparatorId": 1104,
       "outcomeId": 199192,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1103,
-      "outcomeName": "Absence of breast",
-      "comparatorId": 1104,
-      "outcomeId": 4088290,
       "type": "outcome"
     },
     {
@@ -69576,13 +69477,6 @@
     },
     {
       "targetId": 1103,
-      "outcomeName": "Fracture of upper limb",
-      "comparatorId": 1104,
-      "outcomeId": 4050747,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1103,
       "outcomeName": "Gallstone",
       "comparatorId": 1104,
       "outcomeId": 196456,
@@ -69863,13 +69757,6 @@
     },
     {
       "targetId": 1103,
-      "outcomeName": "Osteochondropathy",
-      "comparatorId": 1104,
-      "outcomeId": 75354,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1103,
       "outcomeName": "Paraplegia",
       "comparatorId": 1104,
       "outcomeId": 192606,
@@ -70083,13 +69970,6 @@
       "outcomeName": "Visceroptosis",
       "comparatorId": 1104,
       "outcomeId": 4248870,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1103,
-      "outcomeName": "Wrist joint pain",
-      "comparatorId": 1104,
-      "outcomeId": 4115367,
       "type": "outcome"
     },
     {

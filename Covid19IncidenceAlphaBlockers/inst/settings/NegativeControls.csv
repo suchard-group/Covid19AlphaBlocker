@@ -1,8 +1,6 @@
 targetId,comparatorId,outcomeId,outcomeName,type
-1103,1104,434165,Abnormal cervical smear,outcome
 1103,1104,436409,Abnormal pupil,outcome
 1103,1104,199192,Abrasion and/or friction burn of trunk without infection,outcome
-1103,1104,4088290,Absence of breast,outcome
 1103,1104,4092879,Absent kidney,outcome
 1103,1104,436634,Acariasis,outcome
 1103,1104,44783954,Acid reflux,outcome
@@ -47,7 +45,6 @@ targetId,comparatorId,outcomeId,outcomeName,type
 1103,1104,4345472,Epstein-Barr virus disease,outcome
 1103,1104,4092896,Feces contents abnormal,outcome
 1103,1104,259995,Foreign body in orifice,outcome
-1103,1104,4050747,Fracture of upper limb,outcome
 1103,1104,196456,Gallstone,outcome
 1103,1104,40481632,Ganglion cyst,outcome
 1103,1104,4166231,Genetic predisposition,outcome
@@ -88,7 +85,6 @@ targetId,comparatorId,outcomeId,outcomeName,type
 1103,1104,4215978,Onychomycosis,outcome
 1103,1104,140648,Onychomycosis due to dermatophyte,outcome
 1103,1104,438130,Opioid abuse,outcome
-1103,1104,75354,Osteochondropathy,outcome
 1103,1104,192606,Paraplegia,outcome
 1103,1104,4091513,Passing flatus,outcome
 1103,1104,4112731,Polyp of intestine,outcome
@@ -120,5 +116,4 @@ targetId,comparatorId,outcomeId,outcomeName,type
 1103,1104,380038,Viral conjunctivitis,outcome
 1103,1104,4291005,Viral hepatitis,outcome
 1103,1104,4248870,Visceroptosis,outcome
-1103,1104,4115367,Wrist joint pain,outcome
 1103,1104,440193,Wristdrop,outcome
