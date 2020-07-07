@@ -4,3 +4,6 @@
 \name{Covid19IncidenceAlphaBlockers}
 \alias{Covid19IncidenceAlphaBlockers}
 \title{Covid19IncidenceAlphaBlockers}
+\description{
+An OHDSI R package to compare the relative risk of COVID-19 susceptibility for alpha-blocker users
+}

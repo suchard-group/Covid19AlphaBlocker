@@ -18,9 +18,14 @@
 
 #' Covid19IncidenceAlphaBlockers
 #'
+#' An OHDSI R package to compare the relative risk of COVID-19 susceptibility for alpha-blocker users
+#'
 #' @docType package
 #' @name Covid19IncidenceAlphaBlockers
 #' @importFrom stats aggregate density pnorm qnorm quantile
 #' @importFrom utils read.csv write.csv install.packages menu setTxtProgressBar txtProgressBar write.table
 #' @import DatabaseConnector
+#' @importFrom dplyr pull collect bind_rows group_by summarise ungroup `%>%`
+#' @importFrom rlang .data
+#'
 NULL
