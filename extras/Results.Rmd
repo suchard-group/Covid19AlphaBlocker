@@ -587,7 +587,7 @@ cat("% Table ends\n\n")
 header <- readr::read_file("ReducedTableTop.tex")
 footer <- readr::read_file("ReducedTableBottom.tex")
 dummy <- printBaselineCharacteristicTable(
-  c("IQVIA_OpenClaims"), c(dataDirs["IQVIA_OpenClaims"]), c(databaseIdLabels["IQVIA_OpenClaims"]), header, footer,
+  c("VA-OMOP"), c(dataDirs["VA-OMOP"]), c(databaseIdLabels["VA-OMOP"]), header, footer,
   reduced = TRUE
 )
 ```
