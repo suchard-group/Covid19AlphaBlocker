@@ -946,7 +946,7 @@ plot(0,0, type = "n",
      xlim = c(0, 12), axes = FALSE, 
      ylab = "", xlab = "")
 
-textCex <- 1.0
+textCex <- 1.
 
 cohortNames <- c()
 cohortPositions <- (c(1:length(cohortNames)) - 1) * (2 * dbs + 4) + 1
@@ -966,7 +966,7 @@ tick <- 0.1
 scaleMin <- 1/8  # -1
 scaleMax <- 8    # +1
 
-y_adjust <- 1.
+y_adjust <- 1.5
 points(x = 4, y = ymax - y_adjust, pch = 21, bg = "black")
 text(x = 4.025, y = ymax - y_adjust, labels = "PS-stratified", 
      pos = 4, cex = textCex, adj = y_adjust)
@@ -1111,9 +1111,9 @@ for (i in 1:length(outcomeIds)) {
        pos = 1, cex = textCex)
 
   text(x = offset,
-       y = bt - 1.25,
+       y = bt - .8,
        labels = outcomeNames[i],
-       cex = 1.)
+       cex = textCex)
 }
 
 invisible(dev.off())
