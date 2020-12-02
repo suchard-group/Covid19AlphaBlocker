@@ -8,9 +8,6 @@ order,id,newNames
 34,    Hypertensive disorder,    Hypertensive disorder
 36,    Obesity,    Obesity
 40,    Renal impairment,    Renal impairment
-47,Medical history: Cardiovascular disease,Medical history: Cardiovascular disease
-49,    Cerebrovascular disease,    Cerebrovascular disease
-53,    Ischemic heart disease,    Ischemic heart disease
 67,Medication use,Medication use
 300,    Agents acting on the renin-angiotensin system,    Agents acting on the renin-angiotensin system
 72,    Antiinflammatory and antirheumatic products,    Antiinflammatory and antirheumatic products
