@@ -1243,7 +1243,6 @@ plotCovariateBalanceScatterPlot <- function(balance,
 ## Across data sources
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE}
-databaseIds <- databaseIds[1:3]
 
 library(cowplot)
 
@@ -1295,7 +1294,7 @@ saveAllBalancePlots <- function(balance, file) {
                       plot_grid(plotlist = plotList, ncol = 3, rel_widths = c(1, 1, 0.1)),
                       base_asp = 3 * 2 / length(databaseIds),
                       base_height = 2 * length(databaseIds),
-                      units = "in", dpi = 600))
+                      units = "in", dpi = 300))
 }
 
 balance <- getAllBalancePlots(alphaBlockerId, fiveAlphaId, limits = c(0, 0.6), yLimits = c(0, 0.2))
