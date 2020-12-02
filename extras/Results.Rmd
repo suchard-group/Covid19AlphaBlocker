@@ -587,7 +587,7 @@ cat("% Table ends\n\n")
 header <- readr::read_file("ReducedTableTop.tex")
 footer <- readr::read_file("ReducedTableBottom.tex")
 dummy <- printBaselineCharacteristicTable(
-  c("VA-OMOP"), c(dataDirs["VA-OMOP"]), c(databaseIdLabels["VA-OMOP"]), header, footer,
+  c("SIDIAP"), c(dataDirs["SIDIAP"]), c(databaseIdLabels["SIDIAP"]), header, footer,
   reduced = TRUE
 )
 ```
