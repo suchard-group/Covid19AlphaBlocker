@@ -1242,9 +1242,11 @@ plotCovariateBalanceScatterPlot <- function(balance,
 
 ## Across data sources
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE}
-databaseIds <- databaseIds[1:3]
+```{r, echo=FALSE}
+databaseIds <- databaseIds[2:3]
+```
 
+```{r, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE}
 library(cowplot)
 
 getAllBalancePlots <- function(targetId, comparatorId, limits, yLimits) {
@@ -1289,16 +1291,17 @@ saveAllBalancePlots <- function(balance, file) {
     }
   )
   plotList <- lapply(1:length(databaseIds),
-                     function (i) list(balance$strat[[i]], balance$match[[i]], labelPlots[[i]]))
+                     function (i) list(balance$strat[[i]], labelPlots[[i]]))
   plotList <- do.call(c, plotList)
   invisible(save_plot(file,
-                      plot_grid(plotlist = plotList, ncol = 3, rel_widths = c(1, 1, 0.1)),
-                      base_asp = 3 * 2 / length(databaseIds),
+                      plot_grid(plotlist = plotList, ncol = 2, rel_widths = c(1, 0.1)),
+                      base_asp = 3 / length(databaseIds),
                       base_height = 2 * length(databaseIds),
                       units = "in", dpi = 600))
 }
 
 balance <- getAllBalancePlots(alphaBlockerId, fiveAlphaId, limits = c(0, 0.6), yLimits = c(0, 0.2))
+
 saveAllBalancePlots(balance, file = "allBalanceBeforeAndAfter.png")
 ```
 
