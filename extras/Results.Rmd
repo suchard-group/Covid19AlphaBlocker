@@ -918,7 +918,7 @@ table6 <- table %>%
 delta5 <- 0
 delta6 <- 0
 
-do56 <- TRUE
+do56 <- FALSE
 if (do56) {
   delta5 <- +0.25
   delta6 <- -0.25
@@ -948,15 +948,17 @@ plot(0,0, type = "n",
 
 textCex <- 1.0
 
+vertical_space_factor <- .7
+ymax <- vertical_space_factor * ymax 
 cohortNames <- c()
 cohortPositions <- (c(1:length(cohortNames)) - 1) * (2 * dbs + 4) + 1
-text(x = 0, y = ymax - cohortPositions, labels = cohortNames, pos = 4, cex = textCex)
+text(x = 0, y = ymax - vertical_space_factor * cohortPositions, labels = cohortNames, pos = 4, cex = textCex)
 # 
 # minorNames <- rep(c("Monotherapy", "+ Combination"), length(cohortNames))
 # minorTicks <- tab %>% filter(databaseId == "SIDIAP") %>% select(row) %>% pull() - 1
 # text(x = 0.25, y = ymax - minorTicks, labels = minorNames, pos = 4, cex = textCex)
 
-text(x = 0.5, y = ymax - tab$row, labels = databaseIdLabels[tab$databaseId], pos = 4, cex = textCex)
+text(x = 0.5, y = ymax - vertical_space_factor * tab$row, labels = databaseIdLabels[tab$databaseId], pos = 4, cex = textCex)
 
 start <- 4
 width <- 2.8
@@ -967,17 +969,6 @@ scaleMin <- 1/8  # -1
 scaleMax <- 8    # +1
 
 y_adjust <- 1.
-points(x = 4, y = ymax - y_adjust, pch = 21, bg = "black")
-text(x = 4.025, y = ymax - y_adjust, labels = "PS-stratified", 
-     pos = 4, cex = textCex, adj = y_adjust)
-
-points(x = 6, y = ymax - y_adjust, pch = 21, bg = "white")
-text(x = 6.025, y = ymax - y_adjust, labels = "PS-matched", 
-     pos = 4, cex = textCex, adj = y_adjust)
-
-points(x = 8, y = ymax - y_adjust, pch = 22, bg = poorBalance, col = poorBalance)
-text(x = 8.025, y = ymax - y_adjust, labels = "Fails study diagnostics", 
-     pos = 4, cex = textCex, adj = y_adjust)
 
 scale <- function(x) {
   log(x) / (log(scaleMax) - log(scaleMin)) * width
@@ -1022,13 +1013,13 @@ for (i in 1:length(outcomeIds)) {
 
   rect(xleft = offset + scale(scaleMin),
        xright = offset + scale(scaleMax),
-       ytop = ymax - 2,
+       ytop = ymax - 2 * vertical_space_factor,
        ybottom = -0.5,
        col = outcomeColors[i], #"grey90",
        border = NA)
 
   segments(x0 = offset, x1 = offset,
-           y0 = -0.5, y1 = ymax - 2, lty = 3)
+           y0 = -0.5, y1 = ymax - 2 * vertical_space_factor, lty = 3)
 
   # Stratification
 
@@ -1038,26 +1029,27 @@ for (i in 1:length(outcomeIds)) {
 
   segments(x0 = offset + clip_min(scale(tab$calibratedCi95Lb)),
            x1 = offset + clip_max(scale(tab$calibratedCi95Ub)),
-           y0 = ymax - tab$row + delta5, y1 = ymax - tab$row + delta5,
+           y0 = ymax - vertical_space_factor * tab$row + delta5, 
+           y1 = ymax - vertical_space_factor * tab$row + delta5,
            col = tab$balanceColor,
            lwd = interval_lwd)
 
   segments(x0 = offset + clip_rm(scale(tab$calibratedCi95Lb)),
            x1 = offset + clip_rm(scale(tab$calibratedCi95Lb)),
-           y0 = ymax - tab$row + tick + delta5,
-           y1 = ymax - tab$row - tick + delta5,
+           y0 = ymax - vertical_space_factor * tab$row + tick + delta5,
+           y1 = ymax - vertical_space_factor * tab$row - tick + delta5,
            col = tab$balanceColor,
            lwd = interval_bar_lwd)
 
   segments(x0 = offset + clip_rm(scale(tab$calibratedCi95Ub)),
            x1 = offset + clip_rm(scale(tab$calibratedCi95Ub)),
-           y0 = ymax - tab$row + tick + delta5,
-           y1 = ymax - tab$row - tick + delta5,
+           y0 = ymax - vertical_space_factor * tab$row + tick + delta5,
+           y1 = ymax - vertical_space_factor * tab$row - tick + delta5,
            col = tab$balanceColor,
            lwd = interval_bar_lwd)
 
   points(x = offset + clip_rm(scale(tab$calibratedRr)),
-         y = ymax - tab$row + delta5,
+         y = ymax - vertical_space_factor * tab$row + delta5,
          pch = tab$point,
          bg = tab$color,
          cex = tab$size,
@@ -1120,7 +1112,7 @@ for (i in 1:length(outcomeIds)) {
        pos = 1, cex = textCex)
 
   text(x = offset,
-       y = bt - 1.25,
+       y = bt - .9,
        labels = outcomeNames[i],
        cex = 1.)
 }
